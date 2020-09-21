@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+
+:root {
+  --radius: 0;
+  --clr:black;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: #272727; */
+  color: black;
+  font-family: "Odibee Sans", sans-serif;
+  font-size: 2rem;
+}
+
+.square {
+  width: 25vh;
+  height: 25vh;
+  background-color: #ff652f;
+  animation-name:example;
+  animation-duration:4s;
+  margin: 1rem;
+  border-radius: var(--radius);
+  width: var(--width);
+  height: var(--width);
+  z-index: 1;
+}
+#rect{
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    top: 500px;
+    /* background-color: var(--clr); */
+    background-color: limegreen;
+    margin: 1rem;
+  }
+  
+
+.form-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 0.25rem;
+}
+label {
+  width: 14rem;
+  text-align: right;
+}
+
+
+.eye {
+  height: 50px;
+  width: 50px;
+  /* top: 10%;
+  left: 60%;; */
+  margin-top: 40px;
+  margin-left: 35px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative; 
+  overflow: hidden;
+  /* position: absolute; */
+}
+
+.ball {
+  height: 20px;
+  width: 20px;
+  /* margin-top: 1px;
+  margin-left: 10px; */
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(50%,50%);
+  border: 6px solid #333;
+}
+/* .dot3{
+  height: 30px;
+  width: 60px;
+  margin-top: 300px;
+  margin-left:200px;
+  background-color: black
+  ;
+  border-radius: 50%;
+  /* display: inline-block 
+}  */
+
+
+div.square {
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation: example 4s infinite;
+}
+/* 
+@keyframes example {
+  0%   {background-color:red; left:-200px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:-200px; top:200px;}
+  100% {background-color:red; left:-200px; top:0px;}
+} */
+
+#cloud1,#cloud2 {
+  z-index: 100;
+  animation: drift 25s linear infinite;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  z-index: 200;
+}
+    .layer1 {
+      width: 250px;
+      height: 100px;
+      border-radius: 50px;
+      background: #ffffff;
+      position: absolute;
+    }
+    .layer2 {
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #fff;
+      top: -40px;
+      left: 120px;
+      z-index: -1;
+    }
+    .layer3 {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #fff;
+      top: -60px;
+      left: 40px;
+      z-index: -2;
+    }
+
+@keyframes drift {
+  from {
+    transform: translateX(-600px);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateX(1800px);
+    opacity: 1;
+  }
+}
+
+#sun {
+  background: yellow;
+  border-radius: 50%;
+
+  margin-top: 50px;
+  margin-left: 100px;
+  animation: shine 5s linear forwards;
+}
+
+@keyframes shine {
+  from {
+    box-shadow: 0 0 10px 10px yellow;
+    width: 50px;
+    height: 50px;
+  }
+  to {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 20px 20px yellow;
+  }
+}

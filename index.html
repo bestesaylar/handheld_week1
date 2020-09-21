@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    
+
+  </head>
+  <body>
+      <div id="target">
+      <h1>Change the BG color<span id="colorOutput"></span></h1>
+      <label>red:</label>
+      <input type="range" id="rangeRed" value="4" min="0" max="255">
+      <label>green:</label>
+      <input type="range" id="rangeGreen" value="139" min="0" max="255">
+      <label>blue:</label>
+      <input type="range" id="rangeBlue" value="168" min="0" max="255">
+    </div>
+
+      <label for="slider1">Corners:</label>
+      <input type="range" id="slider1" min="0" max="50" value="0" />
+
+      <label for="slider2">Size:</label>
+      <input type="range" id="slider2" min=0 max=500 value="50"/>
+
+    <div id="value"></div>
+    <div class="square">
+      <!-- <svg height="40" width="80">
+        <line x1="30" y1="40" x2="80" y2="0" style="stroke:rgb(0,0,0);stroke-width:10" />
+      </svg>
+      <svg height="10" width="500">
+        <line x1="180" y1="0" x2="130" y2="0" style="stroke:rgb(0,0,0);stroke-width:10" />
+      </svg> -->
+      <span class="eye">
+        <span class="ball"></span>
+      </span>
+      <span class="eye">
+        <span class="ball"></span>
+      </span>
+      <div class="dot3"></div>
+    </div>
+
+    <div id="rect">
+      <h1>HSL<span id="colorOutput"></span></h1>
+      <label>hue:</label>
+      <input id="mySlider1" type="range" step="1" min="0" max="260" value="180"></br>
+      <label>saturation:</label>
+      <input id="mySlider2" type="range" step="1" min="0" max="100" value="50"></br>
+      <label>light:</label>
+      <input id="mySlider3" type="range" step="1" min="0" max="100" value="50">
+    </div>
+    <div id="cloud1">
+      <div class="cloudLayers">
+        <div class="layer1"></div>
+        <div class="layer2"></div>
+        <div class="layer3"></div>
+      </div>
+      <div id="cloud2">
+        <div class="cloudLayers">
+          <div class="layer1"></div>
+          <div class="layer2"></div>
+          <div class="layer3"></div>
+        </div>
+      </div>
+      <div id="sun"></div>
+ 
+  </body>
+  <script src="sketch.js"></script>
+</html>
